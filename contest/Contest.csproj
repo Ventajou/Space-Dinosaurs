@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86730869-444F-49E1-9CEF-99D4B57BF224}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contest</RootNamespace>
+    <AssemblyName>Contest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Audio\boss.mp3" />
+    <Content Include="Audio\race.mp3" />
+    <Content Include="Audio\Race\e-dn.m4a" />
+    <Content Include="Audio\Race\e-hi.m4a" />
+    <Content Include="Audio\Race\e-lo.m4a" />
+    <Content Include="Audio\Race\e-up.m4a" />
+    <Content Include="Audio\Race\engine.m4a" />
+    <Content Include="Audio\Race\engine.mp3" />
+    <Content Include="Audio\Race\engine.wav" />
+    <Content Include="Audio\shooter.mp3" />
+    <Content Include="default.html" />
+    <Content Include="about.html" />
+    <Content Include="Images\CutScenes\1_1.png" />
+    <Content Include="Images\CutScenes\1_2.png" />
+    <Content Include="Images\CutScenes\1_3.png" />
+    <Content Include="Images\CutScenes\1_4.png" />
+    <Content Include="Images\CutScenes\1_5.png" />
+    <Content Include="Images\CutScenes\1_6.png" />
+    <Content Include="Images\Race\bg.png" />
+    <Content Include="Images\Race\car\b-c1.png" />
+    <Content Include="Images\Race\car\b-c12.png" />
+    <Content Include="Images\Race\car\b-c12_2.png" />
+    <Content Include="Images\Race\car\b-c13.png" />
+    <Content Include="Images\Race\car\b-c13_2.png" />
+    <Content Include="Images\Race\car\b-c14.png" />
+    <Content Include="Images\Race\car\b-c14_2.png" />
+    <Content Include="Images\Race\car\b-c1_2.png" />
+    <Content Include="Images\Race\car\b-c2.png" />
+    <Content Include="Images\Race\car\b-c2_2.png" />
+    <Content Include="Images\Race\car\b-c3.png" />
+    <Content Include="Images\Race\car\b-c3_2.png" />
+    <Content Include="Images\Race\car\b-c4.png" />
+    <Content Include="Images\Race\car\b-c4_2.png" />
+    <Content Include="Images\Race\car\c1.png" />
+    <Content Include="Images\Race\car\c10.png" />
+    <Content Include="Images\Race\car\c11.png" />
+    <Content Include="Images\Race\car\c12.png" />
+    <Content Include="Images\Race\car\c12_2.png" />
+    <Content Include="Images\Race\car\c13.png" />
+    <Content Include="Images\Race\car\c13_2.png" />
+    <Content Include="Images\Race\car\c14.png" />
+    <Content Include="Images\Race\car\c14_2.png" />
+    <Content Include="Images\Race\car\c1_2.png" />
+    <Content Include="Images\Race\car\c2.png" />
+    <Content Include="Images\Race\car\c2_2.png" />
+    <Content Include="Images\Race\car\c3.png" />
+    <Content Include="Images\Race\car\c3_2.png" />
+    <Content Include="Images\Race\car\c4.png" />
+    <Content Include="Images\Race\car\c4_2.png" />
+    <Content Include="Images\Race\car\c5.png" />
+    <Content Include="Images\Race\car\c6.png" />
+    <Content Include="Images\Race\car\c7.png" />
+    <Content Include="Images\Race\car\c8.png" />
+    <Content Include="Images\Race\car\c9.png" />
+    <Content Include="Images\Race\cloud.png" />
+    <Content Include="Images\CutScenes\test.png" />
+    <Content Include="Images\Race\explosion.png" />
+    <Content Include="Images\Race\flak.png" />
+    <Content Include="Images\Race\marker.png" />
+    <Content Include="Images\Race\npc1\1.png" />
+    <Content Include="Images\Race\npc1\2.png" />
+    <Content Include="Images\Race\npc1\3.png" />
+    <Content Include="Images\Race\npc1\4.png" />
+    <Content Include="Images\Race\npc1\5.png" />
+    <Content Include="Images\Race\npc1\6.png" />
+    <Content Include="Images\Race\npc1\7.png" />
+    <Content Include="Images\Race\npc2\1.png" />
+    <Content Include="Images\Race\npc2\2.png" />
+    <Content Include="Images\Race\npc2\3.png" />
+    <Content Include="Images\Race\npc2\4.png" />
+    <Content Include="Images\Race\npc2\5.png" />
+    <Content Include="Images\Race\npc2\6.png" />
+    <Content Include="Images\Race\npc2\7.png" />
+    <Content Include="Images\Race\obstacles\pole.png" />
+    <Content Include="Images\Race\obstacles\r1.png" />
+    <Content Include="Images\Race\obstacles\r2.png" />
+    <Content Include="Images\Race\obstacles\r3.png" />
+    <Content Include="Images\Race\obstacles\r4.png" />
+    <Content Include="Images\Race\obstacles\r5.png" />
+    <Content Include="Images\Race\obstacles\r6.png" />
+    <Content Include="Images\Race\obstacles\sign.png" />
+    <Content Include="Images\Race\obstacles\tree.png" />
+    <Content Include="Images\Race\road1.png" />
+    <Content Include="Images\Race\road2.png" />
+    <Content Include="Images\Race\rpm10.png" />
+    <Content Include="Images\Race\TimeLeft.png" />
+    <Content Include="Images\Shooter\bg.png" />
+    <Content Include="Images\Shooter\Bonus\2.png" />
+    <Content Include="Images\Shooter\Bonus\3.png" />
+    <Content Include="Images\Shooter\Bonus\m.png" />
+    <Content Include="Images\Shooter\Bonus\p.png" />
+    <Content Include="Images\Shooter\Bonus\s.png" />
+    <Content Include="Images\Shooter\boss\0001.png" />
+    <Content Include="Images\Shooter\boss\0002.png" />
+    <Content Include="Images\Shooter\boss\0003.png" />
+    <Content Include="Images\Shooter\boss\0004.png" />
+    <Content Include="Images\Shooter\boss\0005.png" />
+    <Content Include="Images\Shooter\boss\0006.png" />
+    <Content Include="Images\Shooter\boss\0007.png" />
+    <Content Include="Images\Shooter\boss\0008.png" />
+    <Content Include="Images\Shooter\boss\0009.png" />
+    <Content Include="Images\Shooter\boss\boss.png" />
+    <Content Include="Images\Shooter\boss\gun1.png" />
+    <Content Include="Images\Shooter\boss\gun2.png" />
+    <Content Include="Images\Shooter\boss\gun3.png" />
+    <Content Include="Images\Shooter\explosion\0002.png" />
+    <Content Include="Images\Shooter\explosion\0003.png" />
+    <Content Include="Images\Shooter\explosion\0004.png" />
+    <Content Include="Images\Shooter\explosion\0005.png" />
+    <Content Include="Images\Shooter\explosion\0006.png" />
+    <Content Include="Images\Shooter\explosion\0007.png" />
+    <Content Include="Images\Shooter\explosion\0008.png" />
+    <Content Include="Images\Shooter\explosion\0009.png" />
+    <Content Include="Images\Shooter\gun\0000.png" />
+    <Content Include="Images\Shooter\gun\0001.png" />
+    <Content Include="Images\Shooter\gun\0002.png" />
+    <Content Include="Images\Shooter\gun\0003.png" />
+    <Content Include="Images\Shooter\gun\0004.png" />
+    <Content Include="Images\Shooter\gun\0005.png" />
+    <Content Include="Images\Shooter\gun\0006.png" />
+    <Content Include="Images\Shooter\gun\0007.png" />
+    <Content Include="Images\Shooter\gun\0008.png" />
+    <Content Include="Images\Shooter\gun\e0003.png" />
+    <Content Include="Images\Shooter\gun\e0004.png" />
+    <Content Include="Images\Shooter\gun\e0005.png" />
+    <Content Include="Images\Shooter\gun\e0006.png" />
+    <Content Include="Images\Shooter\gun\e0007.png" />
+    <Content Include="Images\Shooter\gun\e0008.png" />
+    <Content Include="Images\Shooter\gun\e0009.png" />
+    <Content Include="Images\Shooter\gun\e0010.png" />
+    <Content Include="Images\Shooter\Meteor\sb.png" />
+    <Content Include="Images\Shooter\missile\0000.png" />
+    <Content Include="Images\Shooter\missile\0001.png" />
+    <Content Include="Images\Shooter\missile\0002.png" />
+    <Content Include="Images\Shooter\missile\0100.png" />
+    <Content Include="Images\Shooter\missile\0101.png" />
+    <Content Include="Images\Shooter\missile\0102.png" />
+    <Content Include="Images\Shooter\missile\0200.png" />
+    <Content Include="Images\Shooter\missile\0201.png" />
+    <Content Include="Images\Shooter\missile\0202.png" />
+    <Content Include="Images\Shooter\missile\0300.png" />
+    <Content Include="Images\Shooter\missile\0301.png" />
+    <Content Include="Images\Shooter\missile\0302.png" />
+    <Content Include="Images\Shooter\missile\0400.png" />
+    <Content Include="Images\Shooter\missile\0401.png" />
+    <Content Include="Images\Shooter\missile\0402.png" />
+    <Content Include="Images\Shooter\missile\0500.png" />
+    <Content Include="Images\Shooter\missile\0501.png" />
+    <Content Include="Images\Shooter\missile\0502.png" />
+    <Content Include="Images\Shooter\missile\0600.png" />
+    <Content Include="Images\Shooter\missile\0601.png" />
+    <Content Include="Images\Shooter\missile\0602.png" />
+    <Content Include="Images\Shooter\missile\0700.png" />
+    <Content Include="Images\Shooter\missile\0701.png" />
+    <Content Include="Images\Shooter\missile\0702.png" />
+    <Content Include="Images\Shooter\missile\0800.png" />
+    <Content Include="Images\Shooter\missile\0801.png" />
+    <Content Include="Images\Shooter\missile\0802.png" />
+    <Content Include="Images\Shooter\missile\0900.png" />
+    <Content Include="Images\Shooter\missile\0901.png" />
+    <Content Include="Images\Shooter\missile\0902.png" />
+    <Content Include="Images\Shooter\missile\1000.png" />
+    <Content Include="Images\Shooter\missile\1001.png" />
+    <Content Include="Images\Shooter\missile\1002.png" />
+    <Content Include="Images\Shooter\missile\1100.png" />
+    <Content Include="Images\Shooter\missile\1101.png" />
+    <Content Include="Images\Shooter\missile\1102.png" />
+    <Content Include="Images\Shooter\missile\1200.png" />
+    <Content Include="Images\Shooter\missile\1201.png" />
+    <Content Include="Images\Shooter\missile\1202.png" />
+    <Content Include="Images\Shooter\missile\1300.png" />
+    <Content Include="Images\Shooter\missile\1301.png" />
+    <Content Include="Images\Shooter\missile\1302.png" />
+    <Content Include="Images\Shooter\missile\1400.png" />
+    <Content Include="Images\Shooter\missile\1401.png" />
+    <Content Include="Images\Shooter\missile\1402.png" />
+    <Content Include="Images\Shooter\missile\1500.png" />
+    <Content Include="Images\Shooter\missile\1501.png" />
+    <Content Include="Images\Shooter\missile\1502.png" />
+    <Content Include="Images\Shooter\plasma\1.png" />
+    <Content Include="Images\Shooter\plasma\2.png" />
+    <Content Include="Images\Shooter\plasma\3.png" />
+    <Content Include="Images\Shooter\Saucer\0001.2.png" />
+    <Content Include="Images\Shooter\Saucer\0001.3.png" />
+    <Content Include="Images\Shooter\Saucer\0001.png" />
+    <Content Include="Images\Shooter\Saucer\0003.png" />
+    <Content Include="Images\Shooter\Saucer\0004.png" />
+    <Content Include="Images\Shooter\Saucer\0005.png" />
+    <Content Include="Images\Shooter\Saucer\0006.png" />
+    <Content Include="Images\Shooter\Saucer\0007.png" />
+    <Content Include="Images\Shooter\Saucer\0008.png" />
+    <Content Include="Images\Shooter\Saucer\0009.png" />
+    <Content Include="Images\Shooter\Saucer\0010.png" />
+    <Content Include="Images\Shooter\buildings\1.png" />
+    <Content Include="Images\Shooter\buildings\2.png" />
+    <Content Include="Images\Shooter\buildings\3.png" />
+    <Content Include="Images\Shooter\buildings\4.png" />
+    <Content Include="Images\Shooter\buildings\5.png" />
+    <Content Include="Images\Shooter\Cloud1.png" />
+    <Content Include="Images\Shooter\cloud2.png" />
+    <Content Include="Images\Shooter\cloud3.png" />
+    <Content Include="Images\Shooter\cloud4.png" />
+    <Content Include="Images\Shooter\cloud5.png" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\Shooter\Meteor\1.png" />
+    <Content Include="Images\Shooter\Meteor\2.png" />
+    <Content Include="Images\Shooter\Meteor\3.png" />
+    <Content Include="Images\Shooter\Meteor\b.png" />
+    <Content Include="Images\Shooter\Meteor\e1.png" />
+    <Content Include="Images\Shooter\Meteor\e10.png" />
+    <Content Include="Images\Shooter\Meteor\e11.png" />
+    <Content Include="Images\Shooter\Meteor\e12.png" />
+    <Content Include="Images\Shooter\Meteor\e13.png" />
+    <Content Include="Images\Shooter\Meteor\e14.png" />
+    <Content Include="Images\Shooter\Meteor\e15.png" />
+    <Content Include="Images\Shooter\Meteor\e16.png" />
+    <Content Include="Images\Shooter\Meteor\e17.png" />
+    <Content Include="Images\Shooter\Meteor\e18.png" />
+    <Content Include="Images\Shooter\Meteor\e2.png" />
+    <Content Include="Images\Shooter\Meteor\e3.png" />
+    <Content Include="Images\Shooter\Meteor\e4.png" />
+    <Content Include="Images\Shooter\Meteor\e5.png" />
+    <Content Include="Images\Shooter\Meteor\e6.png" />
+    <Content Include="Images\Shooter\Meteor\e7.png" />
+    <Content Include="Images\Shooter\Meteor\e8.png" />
+    <Content Include="Images\Shooter\Meteor\e9.png" />
+    <Content Include="Images\Shooter\Ptera\0001.png" />
+    <Content Include="Images\Shooter\Ptera\0002.5.png" />
+    <Content Include="Images\Shooter\Ptera\0002.png" />
+    <Content Include="Images\Shooter\Ptera\0003.5.png" />
+    <Content Include="Images\Shooter\Ptera\0003.png" />
+    <Content Include="Images\Shooter\Ptera\0004.png" />
+    <Content Include="Images\Shooter\Ptera\0005.png" />
+    <Content Include="Images\Shooter\Ptera\0006.png" />
+    <Content Include="Images\Shooter\Ptera\0007.png" />
+    <Content Include="Images\Shooter\Ptera\0008.png" />
+    <Content Include="Images\Shooter\Ptera\0009.png" />
+    <Content Include="Images\Shooter\Ptera\0010.png" />
+    <Content Include="Images\Shooter\Ptera\0011.png" />
+    <Content Include="Images\Shooter\Ptera\0012.png" />
+    <Content Include="Images\Shooter\Ptera\0013.png" />
+    <Content Include="Images\Shooter\Ptera\0014.png" />
+    <Content Include="Images\Shooter\Ptera\0015.png" />
+    <Content Include="Images\Title\Title.png" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\mscorlib.debug.js" />
+    <Content Include="Scripts\mscorlib.js" />
+    <Content Include="Scripts\Vtj.debug.js" />
+    <Content Include="Scripts\Vtj.js" />
+    <Content Include="Styles\CutScenes.css">
+      <DependentUpon>CutScenes.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\CutScenes.min.css">
+      <DependentUpon>CutScenes.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\HighScores.css">
+      <DependentUpon>HighScores.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\HighScores.min.css">
+      <DependentUpon>HighScores.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\Main.css">
+      <DependentUpon>Main.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\Main.min.css">
+      <DependentUpon>Main.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\Menus.css">
+      <DependentUpon>Menus.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\Menus.min.css">
+      <DependentUpon>Menus.chirp.less</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Audio\boss.ogg" />
+    <None Include="Audio\race.ogg" />
+    <None Include="Audio\Race\engine.ogg" />
+    <None Include="Audio\shooter.ogg" />
+    <None Include="Fonts\digital7.woff" />
+    <None Include="Fonts\joystix.woff" />
+    <None Include="Styles\CutScenes.chirp.less" />
+    <None Include="Styles\HighScores.chirp.less" />
+    <None Include="Styles\Main.chirp.less" />
+    <None Include="Styles\Menus.chirp.less" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50602</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

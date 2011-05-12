@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{352E2BFC-DE4E-4295-9BC3-A5F5A9457B5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStdLib>True</NoStdLib>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <LangVersion>ISO-2</LangVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vtj</RootNamespace>
+    <AssemblyName>Vtj</AssemblyName>
+    <TemplateFile>Properties\Scripts.script</TemplateFile>
+    <CodeAnalysisRuleSet>Properties\Scripts.ruleset</CodeAnalysisRuleSet>
+    <ReferencePath>$(ProgramFiles)\ScriptSharp\v1.0\Framework\</ReferencePath>
+    <DeploymentPath>..\Contest\Scripts</DeploymentPath>
+    <!--<WebAppPartitioning>True</WebAppPartitioning>-->
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0028, 1591, 1684</NoWarn>
+    <DocumentationFile>bin\Debug\Vtj.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0028, 1591, 1684</NoWarn>
+    <DocumentationFile>bin\Release\Vtj.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib, Version=0.7.0.0, Culture=neutral, PublicKeyToken=8fc0e3af5abcb6c4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Program Files (x86)\ScriptSharp\v1.0\Framework\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.jQuery, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Program Files (x86)\ScriptSharp\v1.0\Framework\Script.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.Web, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Program Files (x86)\ScriptSharp\v1.0\Framework\Script.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compat\AudioElement.cs" />
+    <Compile Include="Compat\Console.cs" />
+    <Compile Include="Contest\End.cs" />
+    <Compile Include="Contest\GameOver.cs" />
+    <Compile Include="Contest\HighScore.cs" />
+    <Compile Include="Contest\HighScores.cs" />
+    <Compile Include="Contest\Intro.cs" />
+    <Compile Include="Contest\MenuBackgroundSystem.cs" />
+    <Compile Include="Contest\Race\CarSystem.cs" />
+    <Compile Include="Contest\Race\CloudSystem.cs" />
+    <Compile Include="Contest\Race\Explosion.cs" />
+    <Compile Include="Contest\Race\FlakObject.cs" />
+    <Compile Include="Contest\Race\NpcSystem.cs" />
+    <Compile Include="Contest\Race\ObstacleSystem.cs" />
+    <Compile Include="Contest\Race\Pole.cs" />
+    <Compile Include="Contest\Race\RoadSystem.cs" />
+    <Compile Include="Contest\Race\Sign.cs" />
+    <Compile Include="Contest\Race\Tree.cs" />
+    <Compile Include="Contest\Shooter\BasicPlasmaBall.cs" />
+    <Compile Include="Contest\Shooter\BigSaucer.cs" />
+    <Compile Include="Contest\Shooter\Bonus.cs" />
+    <Compile Include="Contest\Shooter\BonusSystem.cs" />
+    <Compile Include="Contest\Shooter\Boss.cs" />
+    <Compile Include="Contest\Shooter\BossGun.cs" />
+    <Compile Include="Contest\Shooter\BuildingSystem.cs" />
+    <Compile Include="Contest\Shooter\Bullet.cs" />
+    <Compile Include="Contest\Shooter\Explosion.cs" />
+    <Compile Include="Contest\Shooter\TimeIndexedSineMotion.cs" />
+    <Compile Include="Contest\Shooter\PlasmaBall.cs" />
+    <Compile Include="Contest\Shooter\PlasmaSystem.cs" />
+    <Compile Include="Contest\Shooter\Gun.cs" />
+    <Compile Include="Contest\Shooter\Dino.cs" />
+    <Compile Include="Contest\Shooter\DinosSystem.cs" />
+    <Compile Include="Contest\Shooter\IMotion.cs" />
+    <Compile Include="Contest\Shooter\MeteorSystem.cs" />
+    <Compile Include="Contest\GamePage.cs" />
+    <Compile Include="Contest\Shooter\Missile.cs" />
+    <Compile Include="Contest\Shooter\Projectile.cs" />
+    <Compile Include="Contest\Shooter\Pteranodon.cs" />
+    <Compile Include="Contest\Shooter\SeekMotion.cs" />
+    <Compile Include="Contest\Shooter\SineMotion.cs" />
+    <Compile Include="Contest\Shooter\StraightMotion.cs" />
+    <Compile Include="Contest\Shooter\WeaponsSystem.cs" />
+    <Compile Include="Contest\SpaceDinosGame.cs" />
+    <Compile Include="Contest\Fodder\FodderLevel.cs" />
+    <Compile Include="Contest\Platform\PlatformLevel.cs" />
+    <Compile Include="Contest\Race\Boulder.cs" />
+    <Compile Include="Contest\Race\EngineSound.cs" />
+    <Compile Include="Contest\Race\Cloud.cs" />
+    <Compile Include="Contest\Race\Npc.cs" />
+    <Compile Include="Contest\Race\RaceLevel.cs" />
+    <Compile Include="Contest\Race\RoadEvent.cs" />
+    <Compile Include="Contest\Race\RoadObject.cs" />
+    <Compile Include="Contest\Strings.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Contest\Title.cs" />
+    <Compile Include="Gaming\AnimationEventArgs.cs" />
+    <Compile Include="Gaming\AnimationSequence.cs" />
+    <Compile Include="Gaming\CutScene.cs" />
+    <Compile Include="Gaming\Game.cs" />
+    <Compile Include="Gaming\Vector2D.cs" />
+    <Compile Include="Gaming\Scene.cs" />
+    <Compile Include="Compat\ExplorerNineStyles.cs" />
+    <Compile Include="Compat\FireFoxFourStyles.cs" />
+    <Compile Include="Gaming\GameObject.cs" />
+    <Compile Include="Compat\GenericStyles.cs" />
+    <Compile Include="Gaming\GameSystem.cs" />
+    <Compile Include="Compat\IVendorStyles.cs" />
+    <Compile Include="Contest\Shooter\CloudRow.cs" />
+    <Compile Include="Contest\Shooter\CloudSystem.cs" />
+    <Compile Include="Contest\Shooter\ShooterLevel.cs" />
+    <Content Include="Properties\Scripts.ruleset" />
+    <Content Include="Properties\Scripts.script" />
+    <Compile Include="Gaming\Sprite.cs" />
+    <Compile Include="Gaming\Vector3D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Contest\Strings.resx">
+      <Generator>ResXFileScriptGenerator</Generator>
+      <LastGenOutput>Strings.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(ProgramFiles)\ScriptSharp\v1.0\ScriptSharp.targets" />
+</Project>

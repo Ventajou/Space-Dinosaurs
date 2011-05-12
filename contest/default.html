@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Dinosaurs! By Ventajou</title>
+    <link href="Styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/menus.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/highscores.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/cutscenes.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="TopButtons">
+        <a href="http://www.ventajou.com"><span>Home</span></a> - <a href="http://twitter.com/ventajou">
+            <span>Twitter</span></a> - <a href="mailto:contact@ventajou.com"><span>Email</span></a>
+        - <a href="about.html"><span>About</span></a>
+    </div>
+    <div class="WaitMessage">
+        <div class="Overlay">
+            &nbsp;</div>
+        <div class="Message">
+            <p>
+                Please Wait...</p>
+            <p>
+                Loading Resources <span id="LoadedResources">0</span> of <span id="TotalResources">0
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="PauseMessage">
+        <div class="Overlay">
+        </div>
+        <div class="Message">
+            <h1>
+                Paused</h1>
+            <p>
+                You seem to be busy doing something else, so we have paused the game for you until
+                you come back.
+            </p>
+            <p>
+                Just click anywhere on the page when you're ready to play again.
+            </p>
+        </div>
+    </div>
+    <div class="GameWrapper">
+        <div class="GameArea" tabindex="1">
+            <div class="GameOverlay">
+            </div>
+            <canvas class="GameCanvas" width="800" height="600">
+            </canvas>
+        </div>
+    </div>
+</body>
+<script src="Scripts/jquery-1.5.1.js" type="text/javascript"></script>
+<script src="Scripts/mscorlib.js" type="text/javascript"></script>
+<script src="Scripts/Vtj.js" type="text/javascript"></script>
+</html>

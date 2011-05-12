@@ -1,0 +1,11 @@
+.CutScene {
+  margin: 45px;
+  text-align: center;
+}
+.CutScene img {
+  margin: 5px;
+}
+.CutScene div {
+  margin: 20px;
+  text-align: left;
+}
