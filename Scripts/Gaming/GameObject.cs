@@ -8,7 +8,6 @@ namespace Vtj.Gaming
 {
     internal delegate void AnimationCompletedEventHandler(object source, AnimationEndedEventArgs e);
 
-    [ScriptNamespace("vtg")]
     internal class GameObject : IDisposable
     {
         #region Private Members

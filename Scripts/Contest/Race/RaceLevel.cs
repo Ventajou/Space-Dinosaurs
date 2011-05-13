@@ -8,7 +8,6 @@ using jQueryApi;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal enum EngineStatus
     {
         Up = 0,
@@ -17,7 +16,6 @@ namespace Vtj.Contest.Race
         High = 3
     }
 
-    [ScriptNamespace("vtsdr")]
     internal enum RaceStatus
     {
         Starting = 0,
@@ -27,7 +25,6 @@ namespace Vtj.Contest.Race
         Fail = 4
     }
 
-    [ScriptNamespace("vtsdr")]
     internal class RaceLevel : Scene
     {
         #region Private Members
@@ -90,7 +87,7 @@ namespace Vtj.Contest.Race
 
         protected override void Init()
         {
-            if (jQuery.Browser.Mozilla)
+            if (jQuery.Browser.Mozilla || jQuery.Browser.Opera)
                 _music = LoadAudio("Audio/race.ogg");
             else
                 _music = LoadAudio("Audio/race.mp3");

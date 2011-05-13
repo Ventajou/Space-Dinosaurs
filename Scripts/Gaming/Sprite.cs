@@ -3,7 +3,6 @@ using System.Runtime.CompilerServices;
 
 namespace Vtj.Gaming
 {
-    [ScriptNamespace("vtg")]
     internal class Sprite
     {
         public ImageElement Image;

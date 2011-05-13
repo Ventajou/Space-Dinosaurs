@@ -6,7 +6,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class CloudSystem : GameSystem
     {
         private const int CloudCount = 5;

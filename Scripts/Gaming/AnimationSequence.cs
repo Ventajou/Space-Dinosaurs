@@ -7,7 +7,6 @@ namespace Vtj.Gaming
     /// <summary>
     /// Groups a set of sprites in a sequence that can be animated
     /// </summary>
-    [ScriptNamespace("vtg")]
     internal class AnimationSequence
     {
         public List<Sprite> Sprites = new List<Sprite>();

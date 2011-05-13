@@ -7,7 +7,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class CloudSystem : GameSystem
     {
         private ImageElement _explosionImage;

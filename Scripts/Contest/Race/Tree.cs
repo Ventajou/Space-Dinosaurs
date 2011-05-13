@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class Tree : RoadObject
     {
         public Tree(long distance, float x, Scene scene)

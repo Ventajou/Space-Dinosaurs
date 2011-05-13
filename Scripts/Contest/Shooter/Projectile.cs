@@ -8,7 +8,6 @@ namespace Vtj.Contest.Shooter
     /// <summary>
     /// Base class for any projectile shot by the player's ship
     /// </summary>
-    [ScriptNamespace("vtsds")]
     internal abstract class Projectile : GameObject
     {
         protected IMotion Motion;

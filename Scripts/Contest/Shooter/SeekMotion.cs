@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class SeekMotion : IMotion
     {
         public GameObject Target;

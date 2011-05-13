@@ -3,7 +3,6 @@ using System.Runtime.CompilerServices;
 
 namespace Vtj.Contest
 {
-    [ScriptNamespace("vtsd")]
     internal class End : Scene
     {
         public End(Game game)

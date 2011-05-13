@@ -6,7 +6,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class RoadSystem : GameSystem
     {
         private RaceLevel _level;

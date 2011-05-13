@@ -6,7 +6,6 @@ using System.Html.Media.Graphics;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class DinosSystem : GameSystem
     {
         private List<Dino> _dinos;

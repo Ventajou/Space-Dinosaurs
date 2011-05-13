@@ -9,7 +9,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest
 {
-    [ScriptNamespace("vtsd")]
     internal class Title : Scene
     {
         ImageElement _titleImage;

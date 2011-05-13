@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class Boulder : RoadObject
     {
         public Boulder(long distance, float x, Scene scene)

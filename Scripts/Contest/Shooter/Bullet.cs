@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class Bullet : Projectile
     {
         public static long LastFired;

@@ -7,7 +7,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest
 {
-    [ScriptNamespace("vtsd")]
     internal class SpaceDinosGame : Game
     {
         public const string HighScoresKey = "HighScores";

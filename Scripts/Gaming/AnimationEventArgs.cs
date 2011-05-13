@@ -6,7 +6,6 @@ namespace Vtj.Gaming
     /// <summary>
     /// Arguments for the AnimationEnded event
     /// </summary>
-    [ScriptNamespace("vtg")]
     internal class AnimationEndedEventArgs : EventArgs
     {
         public string Key;

@@ -4,7 +4,6 @@ using System.Runtime.CompilerServices;
 
 namespace Vtj.Gaming
 {
-    [ScriptNamespace("vtg")]
     internal class CutScene : Scene
     {
         private string _imagePath;
@@ -15,7 +14,6 @@ namespace Vtj.Gaming
         private int _charIndex;
         private bool _finished;
         private Game _game;
-        private long _nextLetter;
 
         public CutScene(Game game, string imagePath, string text)
             : base(game)
@@ -41,17 +39,14 @@ namespace Vtj.Gaming
             _paragraphIndex = 0;
             _charIndex = 0;
             _finished = false;
-            _nextLetter = 0;
         }
 
         protected override void Update(CanvasContext2D context)
         {
             context.ClearRect(0, 0, 800, 600);
-            if (!_finished && (_nextLetter < Ticks || _keyPressed))
+            if (!_finished)
             {
                 _textElement.InnerHTML += GetNextLetter();
-                if (_nextLetter == 0 || _keyPressed) _nextLetter = Ticks + 100;
-                else _nextLetter += 100;
             }
         }
 
@@ -78,12 +73,17 @@ namespace Vtj.Gaming
         protected override void KeyDown(ElementEvent e)
         {
             _keyPressed = true;
-            if (_finished) _game.NextLevel();
         }
 
         protected override void KeyUp(ElementEvent e)
         {
             _keyPressed = false;
+            if (_finished) _game.NextLevel();
+
+            while (!_finished)
+            {
+                _textElement.InnerHTML += GetNextLetter();
+            }
         }
     }
 }

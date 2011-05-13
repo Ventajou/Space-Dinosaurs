@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest
 {
-    [ScriptNamespace("vtsd")]
     internal class GameOver : Scene
     {
         Element _overlay = jQuery.Select(".GameOverlay").GetElement(0);

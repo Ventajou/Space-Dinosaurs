@@ -3,7 +3,6 @@ using System.Runtime.CompilerServices;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class FlakObject
     {
         private const int LifeSpan = 4000;

@@ -6,7 +6,6 @@ using System.Html.Media.Graphics;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class WeaponsSystem : GameSystem
     {
         public static int TotalMissiles;

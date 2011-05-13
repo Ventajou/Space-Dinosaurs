@@ -6,7 +6,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest
 {
-    [ScriptNamespace("vtsd")]
     internal class HighScores : Scene
     {
         Element _overlay = jQuery.Select(".GameOverlay").GetElement(0);

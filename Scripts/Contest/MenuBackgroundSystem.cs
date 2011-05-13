@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest
 {
-    [ScriptNamespace("vtsd")]
     internal class MenuBackgroundSystem : GameSystem
     {
         private static ImageElement _backgroundImage;

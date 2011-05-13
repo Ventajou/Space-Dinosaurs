@@ -5,7 +5,6 @@ using System;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class BigSaucer : Dino
     {
         private bool _bonusCreated = false;

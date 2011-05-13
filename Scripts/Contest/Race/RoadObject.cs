@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal abstract class RoadObject
     {
         public long Distance;

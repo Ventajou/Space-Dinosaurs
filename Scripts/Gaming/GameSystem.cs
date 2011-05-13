@@ -7,7 +7,6 @@ namespace Vtj.Gaming
     /// <summary>
     /// Provides a framework for game subsystems to be easily reused among scenes
     /// </summary>
-    [ScriptNamespace("vtg")]
     internal abstract class GameSystem : IDisposable
     {
         /// <summary>

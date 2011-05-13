@@ -11,7 +11,6 @@ namespace Vtj.Gaming
     /// <summary>
     /// A game scene (level, screen...)
     /// </summary>
-    [ScriptNamespace("vtg")]
     internal abstract class Scene : IDisposable
     {
         #region Private Members

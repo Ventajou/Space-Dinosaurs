@@ -6,7 +6,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class EngineSoundSystem : GameSystem
     {
         private RaceLevel _level;
@@ -30,7 +29,7 @@ namespace Vtj.Contest.Race
             _level = (RaceLevel)level;
             _playThroughListener = SoundLoaded;
             _timeUpdatedListener = TimeUpdated;
-            if (jQuery.Browser.Mozilla)
+            if (jQuery.Browser.Mozilla || jQuery.Browser.Opera)
                 _engine = _level.LoadAudio("Audio/Race/engine.ogg");
             else
                 _engine = _level.LoadAudio("Audio/Race/engine.mp3");

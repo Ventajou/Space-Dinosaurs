@@ -8,7 +8,6 @@ using jQueryApi;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal enum ShooterStatus
     {
         Starting = 0,
@@ -17,7 +16,6 @@ namespace Vtj.Contest.Shooter
         Fail = 4
     }
 
-    [ScriptNamespace("vtsds")]
     internal class ShooterLevel : Scene
     {
         #region Private Members
@@ -84,7 +82,7 @@ namespace Vtj.Contest.Shooter
 #endif
             pendingTimers = new List<int>();
 
-            if (jQuery.Browser.Mozilla)
+            if (jQuery.Browser.Mozilla || jQuery.Browser.Opera)
                 _music = LoadAudio("Audio/boss.ogg");
             else
                 _music = LoadAudio("Audio/boss.mp3");

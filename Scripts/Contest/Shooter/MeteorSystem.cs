@@ -6,7 +6,6 @@ using System;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class MeteorSystem : GameSystem
     {
         private ShooterLevel _level;

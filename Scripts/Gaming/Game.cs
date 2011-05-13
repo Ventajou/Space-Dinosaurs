@@ -2,7 +2,6 @@
 
 namespace Vtj.Gaming
 {
-    [ScriptNamespace("vtg")]
     internal abstract class Game
     {
         #region Private Members

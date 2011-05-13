@@ -6,7 +6,6 @@ using System.Collections.Generic;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class Gun : Dino
     {
         private const int FireRate = 3500;

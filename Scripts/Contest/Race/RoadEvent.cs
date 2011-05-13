@@ -2,7 +2,6 @@
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class RoadEvent
     {
         public long Distance;

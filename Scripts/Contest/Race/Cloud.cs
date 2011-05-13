@@ -2,7 +2,6 @@
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class Cloud
     {
         public float X;

@@ -5,7 +5,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     class Sign : RoadObject
     {
         public Sign(long distance, float x, Scene scene)

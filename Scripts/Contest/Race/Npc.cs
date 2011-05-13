@@ -3,7 +3,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Race
 {
-    [ScriptNamespace("vtsdr")]
     internal class Npc
     {
         public GameObject Object;

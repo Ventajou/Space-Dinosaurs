@@ -7,7 +7,6 @@ using Vtj.Gaming;
 
 namespace Vtj.Contest.Shooter
 {
-    [ScriptNamespace("vtsds")]
     internal class BuildingSystem : GameSystem
     {
         private List<ImageElement> _images;
